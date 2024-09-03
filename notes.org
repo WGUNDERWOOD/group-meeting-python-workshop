@@ -1,0 +1,15 @@
+#+title: Python workshop for group meeting
+* Basics
+** TODO Lists
+** TODO Functions
+** TODO Modules
+** TODO If statements
+** TODO For loops
+** TODO List comprehension
+* Script conversion
+** TODO Data processing: pandas, IO
+** TODO Matrix operations: numpy
+** TODO Visualisation: sk-learn, linear models, pyplot
+* Advanced features
+** TODO PyTorch
+** TODO OOP
