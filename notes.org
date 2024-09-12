@@ -1,8 +1,20 @@
 #+title: Python workshop for group meeting
 * Script conversion
 ** TODO Data processing: pandas, IO
-** TODO Matrix operations: numpy, spectral clustering?
+** TODO Matrix operations: numpy, implement regression
 ** TODO Visualisation: sk-learn, linear models, pyplot
 * Advanced features
 ** TODO PyTorch
 ** TODO OOP
+* Installation instructions
+
+Instructions to set up Python and Jupyter are below. Please feel free to reach out to Will at wgu21@cam.ac.uk with any problems.
+
+Mac:
+Download the latest version of Python from https://www.python.org/downloads/. Run the installer, then open a terminal and run `python3 --version` to check. Once Python is installed, run `pip install jupyterlab` to install Jupyter, and launch it with `jupyter lab`.
+
+Windows:
+Download the latest version of Python from https://www.python.org/downloads/. Run the installer, then open a command prompt and run `python --version` to check. Once Python is installed, run `pip install jupyterlab` to install Jupyter, and launch it with `jupyter lab`.
+
+Linux:
+Follow your package manager's instructions to install Python and pip. For Ubuntu, run `sudo apt install python3 python3-pip`. Once Python is installed, run `pip install jupyterlab` to install Jupyter, and launch it with `jupyter lab`.

@@ -16,6 +16,7 @@ f = False
 print(t or f)
 print(t and f)
 print(t and (not f))
+# comments look like this
 
 # Numeric operations
 a = 4
@@ -146,7 +147,7 @@ print(a + 1)
 print(a * 4)
 print(a.max())
 print(a.T)
-ab = np.matmul(a, b.T)
+ab = a @ b.T
 print(ab)
 print(np.linalg.inv(ab))
 print(np.linalg.eig(ab))

@@ -37,6 +37,8 @@
         python = pkgs.python3.withPackages (ps:
           with ps; [
             numpy
+            pandas
+            matplotlib
           ]);
       in rec {
         packages = {inherit jupyterlab;};
