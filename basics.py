@@ -106,8 +106,6 @@ def slow_fibonacci(n):
 
 f = slow_fibonacci(5)
 print(f)
-#f = slow_fibonacci(35)
-#print(f)
 
 def fibonacci(n, a=0, b=1):
     if n == 0:
@@ -119,3 +117,36 @@ def fibonacci(n, a=0, b=1):
 
 f = fibonacci(100)
 print(f)
+
+# Numpy
+import numpy as np
+one_dim = np.array([1, 2, 3, 4, 5, 6])
+print(one_dim)
+two_dim = np.array([[2, 4, 6], [8, 10, 12]])
+print(two_dim)
+print(two_dim[1,2])
+print(two_dim.shape)
+print(two_dim.size)
+print(two_dim[two_dim < 10])
+reshaped = np.reshape(two_dim, (6))
+print(reshaped)
+
+linear_array = np.linspace(1, 2, num=5)
+print(linear_array)
+zeros_array = np.zeros((2, 3))
+print(zeros_array)
+ones_array = np.ones((2, 3))
+print(ones_array)
+
+a = np.array([[2, 4, 6], [8, 10, 12]])
+b = np.array([[1, 3, 5], [7, 9, 11]])
+print(a + b)
+print(a * b)
+print(a + 1)
+print(a * 4)
+print(a.max())
+print(a.T)
+ab = np.matmul(a, b.T)
+print(ab)
+print(np.linalg.inv(ab))
+print(np.linalg.eig(ab))

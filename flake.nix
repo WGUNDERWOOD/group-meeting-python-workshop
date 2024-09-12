@@ -29,15 +29,23 @@
     (
       system: let
         inherit (jupyenv.lib.${system}) mkJupyterlabNew;
+        pkgs = import nixpkgs {inherit system;};
         jupyterlab = mkJupyterlabNew ({...}: {
           nixpkgs = inputs.nixpkgs;
           kernel.python.minimal.enable = true;
         });
+        python = pkgs.python3.withPackages (ps:
+          with ps; [
+            numpy
+          ]);
       in rec {
         packages = {inherit jupyterlab;};
         packages.default = jupyterlab;
         apps.default.program = "${jupyterlab}/bin/jupyter-lab";
         apps.default.type = "app";
+        devShells.default = pkgs.mkShell {
+          buildInputs = [python];
+        };
       }
     );
 }
