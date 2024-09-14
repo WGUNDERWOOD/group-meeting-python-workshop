@@ -151,3 +151,9 @@ ab = a @ b.T
 print(ab)
 print(np.linalg.inv(ab))
 print(np.linalg.eig(ab))
+
+# TODO show how to import another file
+# TODO basic OOP
+# TODO show pip install numpy
+# TODO mention other packages: seaborn, sklearn, scipy
+# TODO mention virtual environments in README
