@@ -152,8 +152,39 @@ print(ab)
 print(np.linalg.inv(ab))
 print(np.linalg.eig(ab))
 
-# TODO show how to import another file
-# TODO basic OOP
-# TODO show pip install numpy
-# TODO mention other packages: seaborn, sklearn, scipy
-# TODO mention virtual environments in README
+# Importing modules
+import functions
+three = functions.add_one(2)
+print(3)
+
+# Basic OOP
+# objects allow us to store information in a structured way
+# methods allow us to do things with objects
+
+class Person:
+
+  def __init__(self, first_name, surname, age):
+    self.first_name = first_name
+    self.surname = surname
+    self.age = age
+
+  def get_full_name(self):
+      return f"{self.first_name} {self.surname}"
+
+  def get_age_in_year(self, year):
+      return self.age + year - 2024
+
+  def make_older(self):
+      self.age = self.age + 1
+
+p1 = Person("Will", "Underwood", 27)
+
+print(p1.first_name)
+print(p1.surname)
+print(p1.age)
+print(p1.get_full_name())
+print(p1.get_age_in_year(2020))
+print(p1.make_older())
+print(p1.age)
+print(p1.make_older())
+print(p1.age)
