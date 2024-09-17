@@ -31,12 +31,8 @@ def get_fitted_values(X, beta_hat):
 
 beta_hat = fit_lm_beta_hat(X, Y)
 print(beta_hat)
-print(beta_hat.shape)
-print(X.shape)
 fitted_values = get_fitted_values(X, beta_hat)
 residuals = Y - fitted_values
-print(fitted_values)
-print(Y)
 
 # Histogram of responses
 (fig, ax) = plt.subplots(figsize=(5, 5))
@@ -49,4 +45,5 @@ plt.xlim([1, 4])
 plt.xlabel("Fitted values")
 plt.ylabel("Residuals")
 plt.title("Residuals vs. Fitted Values")
+# Can also save as pdf etc
 plt.savefig("plot.png")
