@@ -1,28 +1,28 @@
 # Intro
-# General purpose programming language
-# Become very popular for data science and scientific computing
+# Python is a general-purpose programming language
+# It has become very popular for data science and scientific computing
 
 # Why Python?
-# Python is easy: simple syntax
-# Free and open-source
-# Well maintained: good documentation, bugs fixed quickly
-# Huge ecosystem of packages, backed by corporations (500k+)
-# Multi-paradigm: functional, OOP, etc
-# Dynamic typing and automatic memory management (GIL, RC, GC)
-# Compared to R, Python is better for
+#   Python is easy: simple syntax, closely related to English language
+#   Free and open-source software
+#   Well maintained: good documentation, bugs fixed quickly
+#   Huge ecosystem of packages (500k+), backed by corporations
+#   Multi-paradigm: functional, object-oriented, etc
+#   Dynamic typing and automatic memory management (GIL, RC, GC)
+# Compared to R, Python is seen as better for
 #   Handling large data sets
-#   Deep learning models
-#   General-purpose programming (scripting, web dev, databasing)
+#   Fitting and evaluating deep learning models
+#   General-purpose programming (scripting, web development, databases etc)
 # However
-#   R has more classical statistical packages
+#   R has more classical statistical packages (for now)
 #   R can be easier to use for visualisation
 
 # Overview of the workshop
-# Basics: arithmetic, strings, lists, control flow, functions
-# Then Numpy, OOP, example application with visualisation
-# Min will do second half, show some statistical examples
-# Stop me any time with questions
-# Feel free to follow along on your own machine
+#   Basics: arithmetic, strings, lists, control flow, functions, Numpy, OOP
+#   Then a simple example application with visualisations
+#   Min will do second half, show some more applied statistical examples
+#   Feel free to follow along on your own machine
+#   Stop me any time with questions!
 
 # Basic types
 # Int
@@ -177,6 +177,8 @@ print(one_dim)
 two_dim = np.array([[2, 4, 6], [8, 10, 12]])
 print(two_dim)
 print(two_dim[1,2])
+print(two_dim[1,0:2])
+print(two_dim[0:2,0])
 print(two_dim.shape)
 print(two_dim.size)
 print(two_dim[two_dim < 10])
