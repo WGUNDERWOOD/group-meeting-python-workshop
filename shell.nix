@@ -14,7 +14,9 @@ mkShell {
     (python3.withPackages (ps: with ps; with python3Packages; [
       jupyter
       ipython
-
+      seaborn
+      pytorch
+      scikitlearn
       pandas
       numpy
       matplotlib
