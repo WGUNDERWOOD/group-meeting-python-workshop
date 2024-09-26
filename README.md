@@ -2,7 +2,7 @@
 
 Python workshop for Richard's group meeting
 
-## Useful packages
+## Required packages
 
 - numpy
 - matplotlib
